@@ -1,14 +1,18 @@
 from datetime import date
 
 class Llama:
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
+    
+    def feed(self):
+      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
 
-miss_fuzz = Llama("Miss Fuzz", "llama", "2020-04-23")
-print(miss_fuzz)
-print(miss_fuzz.name)
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow" )
+
+print(miss_fuzz.feed())
