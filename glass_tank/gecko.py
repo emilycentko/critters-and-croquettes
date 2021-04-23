@@ -1,6 +1,6 @@
 from datetime import date
 
-class Gecko():
+class Gecko:
     def __init__(self, name, species, date_added):
         self.name = name
         self.species = species

@@ -12,6 +12,3 @@ class Llama:
 miss_fuzz = Llama("Miss Fuzz", "llama", "2020-04-23")
 print(miss_fuzz)
 print(miss_fuzz.name)
-
-
-
